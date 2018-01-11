@@ -1,0 +1,52 @@
+使用之前可以先配置账号 密码
+git config --global user.name "xxxx"
+git config --global user.email "xxxx"
+git config --global push.default "xxxx"设置全局push的默认分支或不设置
+
+常用命令
+git config --list 获取Git配置信息
+
+//删除操作
+git rm xxx 删除远程上错误文件
+git commit -m 然后提交
+
+//恢复操作
+ git checkout -- xxx 
+
+忽略一些文件、文件夹不提交
+
+在仓库根目录下创建名称为“.gitignore”的文件，写入不需要的文件夹名或文件，每个元素占一行即可，如
+
+xxxx1
+
+xxxx2
+
+xxxx3
+
+
+
+第一步把git上面的项目拉下来:
+git clone https://github.com/xxx/xxxx.git 用于pull主分支(git上面的默认分支)
+或者
+git clone -b xxxx https://github.com/xxx/xxxx.git  用于pull分支 xxx为分支名
+
+第二步把要上传到git上面的文件copy到刚从git上拉取的文件夹中去
+git add . 把所有文件都添加到本地git库
+或git add xxxx 把指定文件添加到本地git库
+
+
+第三步 提交信息
+git commit  -m  "提交信息"
+
+
+
+第四步 推送到远程分支上
+git push -u origin master 默认分支或主分支
+或git push origin xxxx  推送到指定分支
+
+
+
+
+
+
+
